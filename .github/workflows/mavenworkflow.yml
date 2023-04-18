@@ -12,7 +12,7 @@ jobs:
     #     env:
     #       DB_DATABASE: ca2
     #       DB_USER: dev
-    #       DB_PASSWORD: ax2 
+    #       DB_PASSWORD: ax2
     steps:
       - name: checkout
         uses: actions/checkout@v2
