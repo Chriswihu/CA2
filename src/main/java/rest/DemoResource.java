@@ -66,6 +66,15 @@ public class DemoResource {
     @RolesAllowed("admin")
     public String getFromAdmin() {
         String thisuser = securityContext.getUserPrincipal().getName();
-        return "{\"msg\": \"Hello Admin: " + thisuser + "\"}";
+        return "{\"msg\": \"Hello to (admin) User: " + thisuser + "\"}";
     }
+
+//    @GET
+//    @Produces(MediaType.APPLICATION_JSON)
+//    @Path("admin")
+//    @RolesAllowed("admin")
+//    public String getFromAdmin() {
+//        String thisuser = securityContext.getUserPrincipal().getName();
+//        return "{\"msg\": \"Hello Admin: " + thisuser + "\"}";
+//    }
 }
