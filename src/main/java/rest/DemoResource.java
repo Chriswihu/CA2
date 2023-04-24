@@ -50,15 +50,23 @@ public class DemoResource {
             em.close();
         }
     }
-
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     @Path("user")
     @RolesAllowed("user")
     public String getFromUser() {
         String thisuser = securityContext.getUserPrincipal().getName();
-        return "{\"msg\": \"Hello User: " + thisuser + "\"}";
+        return "{\"msg\": \"Hello to User: " + thisuser + "\"}";
     }
+
+//    @GET
+//    @Produces(MediaType.APPLICATION_JSON)
+//    @Path("user")
+//    @RolesAllowed("user")
+//    public String getFromUser() {
+//        String thisuser = securityContext.getUserPrincipal().getName();
+//        return "{\"msg\": \"Hello User: " + thisuser + "\"}";
+//    }
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
