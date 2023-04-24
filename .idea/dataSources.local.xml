@@ -11,6 +11,7 @@
       <schema-mapping>
         <introspection-scope>
           <node kind="schema">
+            <name qname="ca1_test" />
             <name qname="ca2" />
             <name qname="ca2_test" />
           </node>
